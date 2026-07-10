@@ -42,27 +42,21 @@ A Seaborn bar plot compared average months inactive between existing and attrite
 Customers were split into four behavioural groups by combining a median split on transaction amount (⁠ Spend_Group ⁠) with a median split on inactivity (⁠ Inactive_Group ⁠). An interactive Plotly bar chart compared churn rate across these four groups directly, and a boxplot showed the transaction amount distribution within each group, to check whether the groups were meaningfully distinct before drawing conclusions from the churn-rate comparison.
 ## Analysis techniques used
 
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques? Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
-
+Analysis techniques used I used visual exploratory analysis as my main method, testing each of my hypotheses with one Matplotlib, one Seaborn, and one Plotly chart. The specific chart types I used were boxplots (to compare distributions between churned and retained customers), scatter plots (to explore the relationship between two continuous variables), a histogram (to check the shape of an engineered feature), bar charts (to compare a summary statistic across groups)
+I structured my analysis hypothesis by hypothesis, giving each one its own section with all three required chart types together, followed by a short written finding under each chart and an overall conclusion for that hypothesis. I chose this structure over grouping all the Matplotlib charts together, then all the Seaborn charts, and so on, because I wanted each hypothesis to be read and understood as a complete, self-contained argument, rather than making the reader piece together evidence for the same hypothesis from three different places in the notebook. I also had to reconsider Hypothesis 3 once I saw the actual result: the data showed the opposite pattern to what I had predicted, so rather than treating this as a failure, I reported the result honestly and reasoned through a possible explanation for why it might have happened.
 
 
 ## Ethical considerations (optional)
 
-The dataset I used in this project was from Kaggle and was a synthetic dataset so it did not contain real personal data, However if this was a real dataset I would've autonomised the data before beginning exploration.
-
+The dataset I used in this project was from Kaggle and was a synthetic dataset so it did not contain real personal data, However if this was a real dataset I would've autotomised the data before beginning exploration.
+ 
 ## Use of AI
 - I used Chat GPT 5.5 to suggest appropriate graphs for visualisation 
 - I used Chat GPT 5.5 to help put code comments within my code.
 
 ## Development Roadmap
-
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
-
-
+- I want get more comfortable using feature engineering 
+- Be able to incorporate AI effectively
 
 ## Main Data Analysis Libraries
 - Pandas
@@ -76,11 +70,6 @@ The dataset I used in this project was from Kaggle and was a synthetic dataset s
 https://plotly.com/python/ -Plotly documentation
 
 https://seaborn.pydata.org/ - Seaborn documentation
-### Content 
-
-- The text for the Home page was taken from the Wikipedia Article A
-- Instructions on how to implement form validation were taken from a [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
