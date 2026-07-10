@@ -16,7 +16,7 @@ Here is the link for the dataset: https://www.kaggle.com/datasets/sakshigoyal7/c
 
 ## Hypothesis and how to validate?
 
-* List here your project hypothesis(es) and how you envision validating it (them) 
+
 - Customers who have been with the bank longer have a higher credit limit
 - Customers with more bank products are less like to churn 
 - Customers with more inactive months are more likely to churn
