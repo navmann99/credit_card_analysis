@@ -22,16 +22,24 @@ Here is the link for the dataset: https://www.kaggle.com/datasets/sakshigoyal7/c
 - Customers with more inactive months are more likely to churn
 - Customers with high inactivity and high transaction amounts are more likely to churn than other customer groups.
 - Customers with higher credit utilisation rattios are less likely to churn
+
+I will use data visualisations such as scatterplots, boxplots, linegraphs, histograms and bar charts across different variables to see if there is a corelation. (Eg. seeing if there is a corelation between how many products a customer holds and if they they churned)
 ## Project Plan
 
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+Data collection and set up: The synthetic dataset was downloaded from Kaggle and then saved in the Raw data folder.
+Initial data exploration and cleaning: Once had imported the data I explored it by checking the contents of the data such as columns, value counts, statistical data of selected columns. After this had been done I ran to see if there were any missing rows or values, then I checked for duplicates. Any necessary cleaning was done for visualisation.
+Data Visualisation: Scatterplots, boxplots, linegraphs, histograms and bar charts across different variables to create appriate graphs and help test the hypotheses.
 
 ## The rationale to map the business requirements to the Data Visualisations
 
-* List your business requirements and a rationale for mapping them to the Data Visualisations
-
+- Do customers who have been with the bank longer have a higher credit limit?
+ An interactive Plotly scatter plot compared ⁠ Months_on_book ⁠ against ⁠ Credit_Limit ⁠, alongside a correlation check between the two. Plotly was chosen here specifically because the relationship involves a large number of individual data points, and an interactive chart made it possible to inspect specific customers rather than relying on a static, dense scatter alone. A supporting line chart of average credit limit by tenure was added to make any underlying trend easier to read through the noise of individual points.
+- Are customers with more bank products less likely to churn?
+A Matplotlib bar chart compared the average number of products held by existing versus attrited customers, giving a direct headline comparison. A boxplot was added to show the full distribution behind that average, rather than the average alone.
+- Are customers with more inactive months more likely to churn?
+A Seaborn bar plot compared average months inactive between existing and attrited customers, and a boxplot showed the distribution of inactivity within each group, including its spread and outliers.
+- Are customers with high inactivity and high transaction amounts more likely to churn than other groups?
+Customers were split into four behavioural groups by combining a median split on transaction amount (⁠ Spend_Group ⁠) with a median split on inactivity (⁠ Inactive_Group ⁠). An interactive Plotly bar chart compared churn rate across these four groups directly, and a boxplot showed the transaction amount distribution within each group, to check whether the groups were meaningfully distinct before drawing conclusions from the churn-rate comparison.
 ## Analysis techniques used
 
 * List the data analysis methods used and explain limitations or alternative approaches.
@@ -39,19 +47,15 @@ Here is the link for the dataset: https://www.kaggle.com/datasets/sakshigoyal7/c
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
+
+
 ## Ethical considerations (optional)
 
-* Feel free to delete this section if this is a data visualisation only (unit 1 or 2) project submission.
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+The dataset I used in this project was from Kaggle and was a synthetic dataset so it did not contain real personal data, However if this was a real dataset I would've autonomised the data before beginning exploration.
 
-
-
-## Unfixed Bugs
-
-* Please list any unfixed bugs and explain why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+## Use of AI
+- I used Chat GPT 5.5 to suggest appropriate graphs for visualisation 
+- I used Chat GPT 5.5 to help put code comments within my code.
 
 ## Development Roadmap
 
@@ -61,14 +65,17 @@ Here is the link for the dataset: https://www.kaggle.com/datasets/sakshigoyal7/c
 
 
 ## Main Data Analysis Libraries
-
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Plotly
 
 ## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials; however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section into Content and Media, depending on what you include in your project. 
+https://plotly.com/python/ -Plotly documentation
 
+https://seaborn.pydata.org/ - Seaborn documentation
 ### Content 
 
 - The text for the Home page was taken from the Wikipedia Article A
