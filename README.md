@@ -1,21 +1,27 @@
-# Project XYZ
+# Project 1 Credit Card Analysis
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+This project explores reason to why customers may churn factors such as inactivity, card usage and time with bank. the aim of this analysis is see if which are more likely going to influence a customer to churn. using visualisations I can see if certain categories influence customers to leave. I will be to document my findings and summarise reasons.
+
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 ## Dataset Content
 
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's 100GB limit.
+* The dataset I used was the BankChurners and it was a synthetic dataset from Kaggle. 
+Here is the link for the dataset: https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers
 
 ## Business Requirements
 
-* Describe your business requirements
+* To understand reasons as to why customers churn and identify any solutions required to retain customers. To find out at what point a customer is likely to churn.
 
 ## Hypothesis and how to validate?
 
 * List here your project hypothesis(es) and how you envision validating it (them) 
-
+- Customers who have been with the bank longer have a higher credit limit
+- Customers with more bank products are less like to churn 
+- Customers with more inactive months are more likely to churn
+- Customers with high inactivity and high transaction amounts are more likely to churn than other customer groups.
+- Customers with higher credit utilisation rattios are less likely to churn
 ## Project Plan
 
 * Outline the high-level steps taken for the analysis.
@@ -39,13 +45,7 @@
 * Were there any data privacy, bias or fairness issues with the data?
 * How did you overcome any legal or societal issues?
 
-## Dashboard Design (optional)
 
-* Feel free to delete this section if this is a data visualisation only (unit 1 or 2) project submission.
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during project development, you may revisit your dashboard plan to update a feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
 ## Unfixed Bugs
 
@@ -58,23 +58,7 @@
 * What challenges did you face, and what strategies were used to overcome these challenges?
 * What new skills or tools do you plan to learn next based on your project experience? 
 
-## Deployment (optional)
 
-* If this is a Unit 3 Streamlit, Power BI or Tableau Public project, then you can include a link here and explain how you hosted the dashboard.
-
-### Heroku (optional)
-
-* This section is necessary only if you are deploying a Streamlit app to Heroku as part of your submission for units 2 and 3. 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
 
 ## Main Data Analysis Libraries
 
